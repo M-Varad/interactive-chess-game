@@ -3,7 +3,7 @@
 A responsive chess interface built from scratch using HTML5, CSS3, and JavaScript.
 
 ## 🔗 Live Demo
-👉 **[Play the Game Here](https://[YOUR-USERNAME].github.io/interactive-chess-game/)**
+👉 **[Play the Game Here](https://M-Varad.github.io/interactive-chess-game/)**
 
 ## 🚀 Features
 * **Click-to-Move Gameplay:** Intuitive interaction model—click a piece to select, click a square to move.

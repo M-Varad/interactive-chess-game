@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>XYZ</title>
+    <style>
+        table {
+            table-layout: fixed;
+            border-radius: 5px;
+            height: 400px;
+            width: 400px;
+        }
+        th {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            vertical-align: middle;
+            overflow: hidden;
+        }
+        th:hover { 
+            background-color: rgba(255, 255, 0, 0.2);
+            transform: scale(1.05);
+            outline: 1px solid rgba(0, 255, 255, 0.6);
+            transition: transform 0.1s, background-color 0.2s, box-shadow 0.25s, outline 0.25s;
+            border-radius: 5px;
+        }
+        body {
+            background-color:rgb(50, 50, 50);
+        }
+        #chessboard th {
+        background-color: aliceblue;
+        }
+
+        #chessboard tr:nth-child(even) th:nth-child(odd),
+        #chessboard tr:nth-child(odd) th:nth-child(even) {
+            background-color: #6495ed; 
+        }
+        img:hover {
+            transform: scale(1.25);
+            transition: transform 0.12s;
+        }
+    </style>
+</head>
+<body>
+    <table id="chessboard" border="2" align="center" cellspacing="0">
+        <tr>
+            <th id="a8"><img id="Br1" src="images/Br.png"></th>
+            <th id="b8"><img id="Bn1" src="images/Bn.png"></th>
+            <th id="c8"><img id="Bb1" src="images/Bb.png"></th>
+            <th id="d8"><img id="Bq" src="images/Bq.png"></th>
+            <th id="e8"><img id="Bk" src="images/Bk.png"></th>
+            <th id="f8"><img id="Bb2" src="images/Bb.png"></th>
+            <th id="g8"><img id="Bn2" src="images/Bn.png"></th>
+            <th id="h8"><img id="Br2" src="images/Br.png"></th>
+        </tr>
+        <tr>
+            <th id="a7"><img id="Bp1" src="images/Bp.png"></th>
+            <th id="b7"><img id="Bp2" src="images/Bp.png"></th>
+            <th id="c7"><img id="Bp3" src="images/Bp.png"></th>
+            <th id="d7"><img id="Bp4" src="images/Bp.png"></th>
+            <th id="e7"><img id="Bp5" src="images/Bp.png"></th>
+            <th id="f7"><img id="Bp6" src="images/Bp.png"></th>
+            <th id="g7"><img id="Bp7" src="images/Bp.png"></th>
+            <th id="h7"><img id="Bp8" src="images/Bp.png"></th>
+        </tr>
+        <tr>
+            <th id="a6"></th>
+            <th id="b6"></th>
+            <th id="c6"></th>
+            <th id="d6"></th>
+            <th id="e6"></th>
+            <th id="f6"></th>
+            <th id="g6"></th>
+            <th id="h6"></th>
+        </tr>
+        <tr>
+            <th id="a5"></th>
+            <th id="b5"></th>
+            <th id="c5"></th>
+            <th id="d5"></th>
+            <th id="e5"></th>
+            <th id="f5"></th>
+            <th id="g5"></th>
+            <th id="h5"></th>
+        </tr>
+        <tr>
+            <th id="a4"></th>
+            <th id="b4"></th>
+            <th id="c4"></th>
+            <th id="d4"></th>
+            <th id="e4"></th>
+            <th id="f4"></th>
+            <th id="g4"></th>
+            <th id="h4"></th>
+        </tr>
+        <tr>
+            <th id="a3"></th>
+            <th id="b3"></th>
+            <th id="c3"></th>
+            <th id="d3"></th>
+            <th id="e3"></th>
+            <th id="f3"></th>
+            <th id="g3"></th>
+            <th id="h3"></th>
+        </tr>
+        <tr>
+            <th id="a2"><img id="Wp1" src="images/Wp.png"></th>
+            <th id="b2"><img id="Wp2" src="images/Wp.png"></th>
+            <th id="c2"><img id="Wp3" src="images/Wp.png"></th>
+            <th id="d2"><img id="Wp4" src="images/Wp.png"></th>
+            <th id="e2"><img id="Wp5" src="images/Wp.png"></th>
+            <th id="f2"><img id="Wp6" src="images/Wp.png"></th>
+            <th id="g2"><img id="Wp7" src="images/Wp.png"></th>
+            <th id="h2"><img id="Wp8" src="images/Wp.png"></th>
+        </tr>
+        <tr>
+            <th id="a1"><img id="Wr1" src="images/Wr.png"></th>
+            <th id="b1"><img id="Wn1" src="images/Wn.png"></th>
+            <th id="c1"><img id="Wb1" src="images/Wb.png"></th>
+            <th id="d1"><img id="Wq" src="images/Wq.png"></th>
+            <th id="e1"><img id="Wk" src="images/Wk.png"></th>
+            <th id="f1"><img id="Wb2" src="images/Wb.png"></th>
+            <th id="g1"><img id="Wn2" src="images/Wn.png"></th>
+            <th id="h1"><img id="Wr2" src="images/Wr.png"></th>
+        </tr>
+    </table>
+    <script type="module" src="./chess.js"></script>
+    <script type="module" src="./script.js"></script>
+</html>
